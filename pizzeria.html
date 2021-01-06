@@ -1,0 +1,56 @@
+<!-- Det som saknas i uppgiften är att få summan (price/score) att räknas ihop och skrivas ut. -->
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pizzeria</title>
+
+</head>
+
+<body>
+<label for="idUsername"></label><input type="text" name="Användarnamn" id="idUsername">
+<label for="idPassword"></label><input type="password" name="Lösenord" id="idPassword">
+<input type="button" value="Logga in" id="idLogin" onclick="authenticate()">
+<h1 id="idSignedInUser"></h1>
+
+
+<div class="Margarita">
+    <h1 class="productName"></h1>
+    <img class="imageSrc" src="" alt="">
+    <p class="description"></p>
+    <p class="price"></p>
+    <input type="button" class="btnCount" value="Lägg i varukorg" onclick="addToBasket()">
+</div>
+
+<div class="Hawaii">
+    <h1 class="productName"></h1>
+    <img class="imageSrc" src="" alt="">
+    <p class="description"></p>
+    <p class="price"></p>
+    <input type="button" class="btnCount" value="Lägg i varukorg" onclick="addToBasket(this)">
+</div>
+
+<div class="Vegetariana">
+    <h1 class="productName"></h1>
+    <img class="imageSrc" src="" alt="">
+    <p class="description"></p>
+    <p class="price"></p>
+    <input type="button" class="btnCount" value="Lägg i varukorg" onclick="addToBasket(this)">
+</div>
+
+<input type="button" value="Räkna totalsumman i din varukorg" onclick="getPriceTotal(score)">
+
+<p id="count">Antal pizzor: </p>
+<p id="totalsum">Kostnad: </p>
+<p id="result">Totalsumma:</p>
+
+
+<input type="button" onclick="resetScore()" value="Köp">
+
+<script src="pizzeria.js"></script>
+</body>
+
+</html>
+
